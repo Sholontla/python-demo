@@ -1,0 +1,2 @@
+docker load -i teradatajupyterlabext_3.0.0-ec03292021.tar.gz
+docker run -p 127.0.0.1:8888:8888 -v /path/to/my/directory:/home/jovyan/JupyterLabRoot
