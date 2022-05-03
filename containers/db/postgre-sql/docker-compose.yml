@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  postgre_container:
+    image: postgres:latest
+    container_name: dataservicetestingpostgresql
+    environment:
+      - POSTGRES_DB=dataservicetestingpostgresql
+      - POSTGRES_USER=dataservicetestingpostgresql
+      - POSTGRES_PASSWORD=dataservicetestingpostgresql
+      
+    ports:
+      - 5432:5432

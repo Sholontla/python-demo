@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  mongodb_contenedor:
+    image: mongo:latest
+    container_name: testingmongoreactive
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=testingmongoreactive
+      - MONGO_INITDB_ROOT_PASSWORD=testingmongoreactive
+    volumes:
+      - ./mongodb:/db/testingmongoreactive
+    ports:
+      - 27017:27017

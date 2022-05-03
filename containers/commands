@@ -1,0 +1,9 @@
+ELK
+sudo docker-compose -f docker-compose.yml up -d
+
+ZIPKIN
+sudo docker run -d -p 9411:9411 openzipkin/zipkin
+
+RABBITMQ
+
+
