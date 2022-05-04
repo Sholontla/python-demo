@@ -1,0 +1,5 @@
+python -m grpc_tools.protoc --proto_path=.  ./data.proto --python_out=. --grpc_python_out=.
+python -m grpc_tools.protoc -I --python_out=. --grpc_python_out=. route_guide.proto
+python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. data.proto
+python -m grpc_tools.protoc --proto_path=.  ./bidirecctional.proto --python_out=. --grpc_python_out=.
+
